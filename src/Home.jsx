@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       {/* Balance Check Card */}
-      <div className="bg-gray-200 text-black max-w-4xl w-full p-8 rounded-md mb-10">
+      <div className="bg-gray-200 text-black max-w-4xl w-full p-6 lg:p-8 rounded-md mb-10">
         <h2 className="text-2xl text-blue-600 mb-6">
           Gift Card Balance Check
         </h2>
@@ -71,13 +71,13 @@ export default function Home() {
           Please enter your gift card account number below.
         </p>
 
-        <div className="flex gap-3">
+        <div className="lg:flex gap-3 ">
           <input
             type="text"
             value={cardNumber}
             onChange={(e) => setCardNumber(e.target.value)}
             placeholder="Enter gift card"
-            className="border text-white border-gray-400 px-4 py-2 w-80 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border text-white border-gray-400 px-4 py-3 w-full mb-3 lg:mb-0 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
             onClick={handleSubmit}
